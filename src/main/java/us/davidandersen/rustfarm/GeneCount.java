@@ -60,6 +60,17 @@ public class GeneCount
 		}
 	}
 
+	public int countOf(final String gene)
+	{
+		final Integer integer = genes.get(gene);
+		if (integer == null)
+		{
+			return 0;
+		}
+
+		return integer;
+	}
+
 	private final class ComparatorImplementation implements Comparator<GeneNode>
 	{
 		@Override
@@ -90,7 +101,7 @@ public class GeneCount
 		{
 			if ("wxh".contains(gene))
 			{
-				return 3;
+				return 2;
 			}
 			else
 			{

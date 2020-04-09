@@ -52,4 +52,10 @@ public class Planter
 		}
 		return gc;
 	}
+
+	public int colCount(final String gene, final int i)
+	{
+		final GeneCount cc = colCounts(i);
+		return cc.countOf(gene);
+	}
 }

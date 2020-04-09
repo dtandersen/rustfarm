@@ -34,4 +34,10 @@ public class Seed
 	{
 		return (int)genes.stream().filter(g -> g.equals(gene)).count();
 	}
+
+	@Override
+	public String toString()
+	{
+		return "" + genes;
+	}
 }
